@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cd terraform/${stack}/
+eb deploy --label "MockServer-`date +%s`.zip"
+cd -
